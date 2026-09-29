@@ -1,14 +1,16 @@
  <div align="center">
 
-<a href="https://amethyst.social">
-    <img src="./docs/design/3rd%20Logo%20-%20Zitron/amethyst.svg" alt="Amethyst Logo" title="Amethyst logo" width="80"/>
-</a>
+# ZDNostr
 
-# Amethyst
+## Aplicativo P2P Nostr & Central Integrada ZenyDesk
 
-## Nostr Client for Android
+**Marca Detentora:** [ZenyDesk](https://zenydesk.com)  
+**Desenvolvedor:** [aordic.dev](https://aordic.dev)  
+**Motor Tecnológico:** Fork oficial de [vitorpamplona/amethyst](https://github.com/vitorpamplona/amethyst) (Amethyst Core)  
+**Repositório Oficial:** [certimix/ZDNostr-](https://github.com/certimix/ZDNostr-)
 
-Join the social network you control.
+O **ZDNostr** é um cliente descentralizado de alta performance para a rede Nostr (mensagens ponta a ponta criptografadas NIP-04/NIP-44, feeds, pagamentos Bitcoin Lightning e canais públicos) integrado nativamente ao ecossistema **ZenyDesk** para suporte remoto via WebRTC e gerenciamento de TI.
+
 
 [![GitHub downloads](https://img.shields.io/github/downloads/vitorpamplona/amethyst/total?label=Downloads&labelColor=27303D&color=0D1117&logo=github&logoColor=FFFFFF&style=flat)](https://github.com/vitorpamplona/amethyst/releases)
 [![PlayStore downloads](https://img.shields.io/endpoint?color=green&logo=google-play&logoColor=green&url=https%3A%2F%2Fplay.cuzi.workers.dev%2Fplay%3Fi%3Dcom.vitorpamplona.amethyst%26gl%3DUS%26hl%3Den%26l%3DPlayStore%26m%3D%24shortinstalls)](https://play.google.com/store/apps/details?id=com.vitorpamplona.amethyst)

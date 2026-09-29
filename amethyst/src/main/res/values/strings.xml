@@ -1,5 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name" translatable="false">Amethyst</string>
+    <string name="app_name" translatable="false">ZDNostr</string>
+    <string name="zenydesk_hub" translatable="false">ZenyDesk</string>
+    <string name="zenydesk_hub_description">Acesso Remoto White-Label, WebRTC &amp; Suporte Técnico</string>
+    <string name="developed_by_credits" translatable="false">Desenvolvido por aordic.dev • Detentora ZenyDesk</string>
     <!-- Placeholder shown in a chat row while an encrypted message is still being decrypted -->
     <!-- Prefix on a Messages-list preview when the newest message was sent by the logged-in user. %1$s is the message text -->
     <string name="block_hide_user"><![CDATA[Block & Hide User]]></string>

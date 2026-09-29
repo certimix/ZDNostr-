@@ -58,6 +58,9 @@ data class SuggestedWebApp(
 object DefaultWebClients {
     val list: List<SuggestedWebApp> =
         buildList {
+            // ZenyDesk Ecosystem (Acesso Remoto White-Label & Suporte WebRTC)
+            webApp("ZenyDesk", "https://zenydesk.com", "Acesso Remoto White-Label, Suporte WebRTC & Gestão", "https://zenydesk.com/favicon-192.png?v=4")
+
             // Social / microblogging clients
             webApp("Primal", "https://primal.net", "All-in-one client with a built-in wallet", "https://primal.net/assets/apple-touch-icon-a536f430.png")
             webApp("Coracle", "https://coracle.social", "Relay-savvy client for regular people", "https://coracle.social/icons/apple-touch-icon-76x76.png")

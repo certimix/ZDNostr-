@@ -28,6 +28,12 @@
             <data android:scheme="https" />
         </intent>
 
+        <!-- ZenyDesk Native Client Protocol -->
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="zenydesk" />
+        </intent>
+
         <!-- NIP-A3 payment targets. Android 11+ package visibility means
              queryIntentActivities returns NOTHING for a scheme not declared here,
              so without these the zap picker's pay-to chip is invisible on every
@@ -195,7 +201,7 @@
             android:supportsPictureInPicture="true"
             android:theme="@style/Theme.Amethyst">
 
-            <intent-filter android:label="Amethyst">
+            <intent-filter android:label="@string/app_name">
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -208,21 +214,23 @@
                 android:name="android.app.shortcuts"
                 android:resource="@xml/shortcuts" />
 
-            <intent-filter android:label="Amethyst">
+            <intent-filter android:label="@string/app_name">
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
                 <data android:scheme="nostr" />
+                <data android:scheme="zdnostr" />
                 <data android:scheme="amethyst" />
             </intent-filter>
 
-            <intent-filter android:label="Amethyst">
+            <intent-filter android:label="@string/app_name">
                 <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:scheme="nostr" />
+                <data android:scheme="zdnostr" />
             </intent-filter>
 
-            <intent-filter android:label="Amethyst">
+            <intent-filter android:label="@string/app_name">
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
@@ -232,7 +240,7 @@
             </intent-filter>
 
             <!-- NIP-46: an app's `nostrconnect://` offer opens the signer screen, which pairs it. -->
-            <intent-filter android:label="Amethyst">
+            <intent-filter android:label="@string/app_name">
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />

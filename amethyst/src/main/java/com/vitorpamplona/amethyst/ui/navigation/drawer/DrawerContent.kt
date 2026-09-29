@@ -617,6 +617,55 @@ fun ListContent(
     val collapsed by collapsePrefs.flow.collectAsStateWithLifecycle()
 
     Column(modifier) {
+        // ZenyDesk Hub Interactive Mirror
+        Row(
+            modifier =
+                Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 16.dp, vertical = 6.dp)
+                    .background(
+                        color = MaterialTheme.colorScheme.primary.copy(alpha = 0.09f),
+                        shape = RoundedCornerShape(12.dp),
+                    )
+                    .clip(RoundedCornerShape(12.dp))
+                    .clickable {
+                        nav.nav(Route.WebApp("https://zenydesk.com"))
+                        nav.closeDrawer()
+                    }
+                    .padding(horizontal = 14.dp, vertical = 10.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween,
+        ) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Icon(
+                    symbol = MaterialSymbols.DesktopWindows,
+                    contentDescription = "ZenyDesk",
+                    modifier = Size24Modifier,
+                    tint = MaterialTheme.colorScheme.primary,
+                )
+                Spacer(modifier = Width16Space)
+                Column {
+                    Text(
+                        text = "ZenyDesk Hub",
+                        fontWeight = FontWeight.Bold,
+                        fontSize = 15.sp,
+                        color = MaterialTheme.colorScheme.onSurface,
+                    )
+                    Text(
+                        text = "Acesso Remoto & Suporte WebRTC",
+                        fontSize = 11.sp,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                }
+            }
+            Icon(
+                symbol = MaterialSymbols.ChevronRight,
+                contentDescription = null,
+                modifier = Size20Modifier,
+                tint = MaterialTheme.colorScheme.primary,
+            )
+        }
+
         DrawerSections.forEach { section ->
             // Keyed by section: hiding the last row of a section removes it from the drawer
             // entirely, and without a key the sections below would slide up into its slots and
@@ -1090,12 +1139,20 @@ fun BottomContent(
                     }
                 }
 
-            Text(
-                text = string,
-                modifier = Modifier.padding(start = 16.dp),
-                overflow = TextOverflow.Ellipsis,
-                maxLines = 1,
-            )
+            Column(modifier = Modifier.padding(start = 16.dp)) {
+                Text(
+                    text = string,
+                    overflow = TextOverflow.Ellipsis,
+                    maxLines = 1,
+                )
+                Text(
+                    text = "ZDNostr • aordic.dev (ZenyDesk)",
+                    fontSize = 11.sp,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.8f),
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis,
+                )
+            }
 
             IconButton(
                 onClick = {
