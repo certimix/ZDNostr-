@@ -271,7 +271,7 @@ fun main(args: Array<String>) {
     // set before AWT initializes (i.e. before any Swing/AWT class loads).
     if (com.vitorpamplona.amethyst.desktop.platform.PlatformInfo.isMacOS) {
         System.setProperty("apple.laf.useScreenMenuBar", "true")
-        System.setProperty("apple.awt.application.name", "Amethyst")
+        System.setProperty("apple.awt.application.name", "ZDNostr")
         System.setProperty("apple.awt.application.appearance", "system")
     }
 
@@ -383,7 +383,7 @@ fun main(args: Array<String>) {
         Window(
             onCloseRequest = ::exitApplication,
             state = windowState,
-            title = "Amethyst",
+            title = "ZDNostr",
             icon = appIcon,
         ) {
             // macOS: transparent + full-window-content title bar so the deck/sidebar
@@ -1262,8 +1262,8 @@ private fun AppInner(
                     remember {
                         com.vitorpamplona.amethyst.commons.moderation.notifications
                             .NucleusNotificationDispatcher(
-                                bundleId = "com.vitorpamplona.amethyst.desktop",
-                                appLabel = "Amethyst",
+                                bundleId = "com.zenydesk.zdnostr.desktop",
+                                appLabel = "ZDNostr",
                                 fallback =
                                     com.vitorpamplona.amethyst.commons.moderation.notifications
                                         .AwtTrayNotifier(),
@@ -1383,14 +1383,14 @@ private fun AppInner(
                                         )
                                         Spacer(Modifier.height(16.dp))
                                         Text(
-                                            "Amethyst",
+                                            "ZDNostr",
                                             style = MaterialTheme.typography.headlineMedium,
                                             color = MaterialTheme.colorScheme.onBackground,
                                         )
                                         Spacer(Modifier.height(24.dp))
                                         androidx.compose.material3.Icon(
                                             painter = loadingIcon,
-                                            contentDescription = "Amethyst",
+                                            contentDescription = "ZDNostr",
                                             modifier = Modifier.size(96.dp),
                                             tint = MaterialTheme.colorScheme.primary,
                                         )

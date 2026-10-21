@@ -133,13 +133,13 @@ compose.desktop {
                 "jdk.unsupported",   // sun.misc.Unsafe (secp256k1-kmp-jni-jvm, JNA)
             )
 
-            packageName = "Amethyst"
+            packageName = "ZDNostr"
             packageVersion = appVersion
-            description = "Nostr client for desktop"
-            vendor = "Amethyst Contributors"
+            description = "ZDNostr - Rede Social Descentralizada e Soberana"
+            vendor = "ZDNostr Soberano"
 
             macOS {
-                bundleID = "com.vitorpamplona.amethyst.desktop"
+                bundleID = "com.zenydesk.zdnostr.desktop"
                 iconFile.set(project.file("src/jvmMain/resources/icon.icns"))
 
                 // --- Developer ID code signing + notarization ---
@@ -185,7 +185,7 @@ compose.desktop {
 
             windows {
                 iconFile.set(project.file("src/jvmMain/resources/icon.ico"))
-                menuGroup = "Amethyst"
+                menuGroup = "ZDNostr"
                 upgradeUuid = "A1B2C3D4-E5F6-7890-ABCD-EF1234567890"
                 // AUMID persistence for Windows Toast notifications — without a
                 // Start Menu shortcut the AUMID isn't registered and toasts

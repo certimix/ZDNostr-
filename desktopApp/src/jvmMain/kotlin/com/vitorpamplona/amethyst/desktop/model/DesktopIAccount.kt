@@ -530,7 +530,7 @@ class DesktopIAccount(
     }
 
     companion object {
-        const val CLIENT_TAG_NAME = "Amethyst"
+        const val CLIENT_TAG_NAME = "ZDNostr"
         private val moderationLog: Logger = Logger.getLogger("DesktopModeration")
     }
 }
